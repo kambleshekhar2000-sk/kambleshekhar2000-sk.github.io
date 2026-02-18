@@ -1,1 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArcPy Watershed Toolbox | Shekhar Kamble</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
 
+<div class="container">
+    <a href="../index.html" class="btn-back"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+    
+    <div class="project-header">
+        <h1>Automated ArcPy Toolbox for Watershed Morphometry</h1>
+        <div class="project-meta">
+            <span><i class="fas fa-calendar"></i> 2025-2026</span>
+            <span><i class="fas fa-university"></i> Shivaji University</span>
+            <span><i class="fas fa-user-tie"></i> Guide: Dr. Sudhir K. Powar</span>
+        </div>
+    </div>
+
+    <div class="content-box">
+        <h3>The Challenge</h3>
+        <p>Standard methods for watershed analysis rely on heavy simulation software like ArcSWAT, which is overly complex for simple analysis. Furthermore, calculating stream ordering and basin geometry manually in Excel is highly time-consuming, prone to human error, and requires switching between multiple software platforms. There was no "one-click" native tool in ArcGIS Pro to handle delineation, morphometry, and ranking simultaneously.</p>
+        
+        <div class="image-container">
+            <img src="../images/toolbox_interface.png" alt="ArcGIS Pro Custom Tool Interface">
+            <div class="image-caption">Figure 1: The custom ArcPy graphical user interface built directly into ArcGIS Pro.</div>
+        </div>
+
+        <h3>The Automated Solution</h3>
+        <p>I developed a lightweight, fast, custom ArcGIS Pro Toolbox (.atbx) built entirely on native ArcPy (Python) requiring no third-party plugins. The tool only requires three inputs: a DEM and Pour Point Threshold values.</p>
+        <ul>
+            <li><strong>Hydrological Delineation:</strong> Automates flow direction, accumulation, and stream network extraction.</li>
+            <li><strong>Morphometric Calculation:</strong> Iterates through attribute tables using <code>SearchCursor</code> and <code>UpdateCursor</code> to handle complex math for Linear, Shape, and Relief parameters instantly.</li>
+            <li><strong>Prioritization Algorithm:</strong> Automatically implements a ranking system to classify micro-watersheds into High, Medium, and Low conservation priority.</li>
+        </ul>
+
+        <div class="image-container">
+            <img src="../images/priority_map.png" alt="Final Conservation Priority Map">
+            <div class="image-caption">Figure 2: The final automated output - Conservation Priority Map prioritizing sub-watersheds.</div>
+        </div>
+
+        <h3>Impact & Technologies</h3>
+        <p>This automated workflow reduces the analysis time for hydrological parameter extraction by approximately <strong>70%</strong>, enabling rapid, data-driven prioritization of sub-watersheds for soil and water conservation planning.</p>
+        
+        <div class="tech-stack">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">ArcPy</span>
+            <span class="tech-tag">ArcGIS Pro (.atbx)</span>
+            <span class="tech-tag">Hydrological Modeling</span>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
