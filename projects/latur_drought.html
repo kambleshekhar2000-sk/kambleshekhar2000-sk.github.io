@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latur Drought Assessment | Shekhar Kamble</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
 
+<div class="container">
+    <a href="../index.html" class="btn-back"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+    
+    <div class="project-header">
+        <h1>Drought Assessment in Northern Latur (2010-2022)</h1>
+        <div class="project-meta">
+            <span><i class="fas fa-satellite"></i> Remote Sensing</span>
+            <span><i class="fas fa-university"></i> Shivaji University</span>
+            <span><i class="fas fa-user-tie"></i> Guide: Dr. Sudhir K. Powar</span>
+        </div>
+    </div>
+
+    <div class="content-box">
+        <h3>Project Objective</h3>
+        <p>This research provided an integrated approach using remote sensing and meteorological data to map and assess drought vulnerability across the Northern Latur district over a 12-year temporal period.</p>
+
+        <div class="image-container">
+            <img src="../images/latur_indices_map.png" alt="Temporal Satellite Indices of Latur">
+            <div class="image-caption">Figure 1: Automated outputs of geospatial indices (NDVI, NDWI, NDMI) processed from Landsat imagery.</div>
+        </div>
+
+        <h3>Technical Approach</h3>
+        <ul>
+            <li><strong>Python Automation:</strong> Developed custom Python scripts to automate the processing and map generation of temporal Landsat imagery, significantly reducing manual raster math.</li>
+            <li><strong>Index Calculation:</strong> Automated the extraction of critical environmental indices including NDVI (Vegetation), NDWI (Water), and NDMI (Moisture).</li>
+            <li><strong>Meteorological Integration:</strong> Utilized the Standardized Precipitation Index (SPI-3) to characterize precipitation deficits across administrative boundaries.</li>
+            <li><strong>CDHI Modeling:</strong> Built a Comprehensive Drought Hazard Index (CDHI) model using weighted overlay spatial analysis to accurately classify varying levels of drought severity.</li>
+        </ul>
+
+        <div class="image-container">
+            <img src="../images/latur_drought_severity.png" alt="CDHI Drought Severity Map">
+            <div class="image-caption">Figure 2: Final CDHI model map classifying drought severity zones across the Northern Latur region.</div>
+        </div>
+
+        <div class="tech-stack">
+            <span class="tech-tag">Python (Rasterio/GeoPandas)</span>
+            <span class="tech-tag">Landsat Imagery</span>
+            <span class="tech-tag">Spatial Overlay Analysis</span>
+            <span class="tech-tag">Meteorological GIS</span>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
