@@ -16,6 +16,12 @@ h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; }
 a { text-decoration: none; color: var(--accent); transition: 0.3s; }
 a:hover { color: #38bdf8; text-decoration: underline; }
 
+/* --- FIX: TEXT JUSTIFICATION (Like MS Word) --- */
+p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 /* Stylish Header */
 header { 
     background: linear-gradient(135deg, var(--primary) 0%, #000000 100%); 
